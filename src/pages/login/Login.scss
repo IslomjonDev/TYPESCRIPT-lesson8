@@ -1,0 +1,71 @@
+.login{
+    display: flex;
+    form{
+        text-align: center;
+        background-color: #FFF;
+        width: 800px;
+        height: 650px;
+        margin: 50px 0;
+        border-radius: 12px;
+        h2{
+            color: dodgerblue;
+            // margin-top: 50px;
+            padding:80px 0;
+        }
+        button{
+         width: 500px;
+         padding: 15px; 
+         border-radius: 6px;
+         border: 1px solid dodgerblue ; 
+         background-color: dodgerblue;
+         color: #FFF;
+         font-size: 18px;
+         transition: .3s;
+         box-shadow: 0 0 6px dodgerblue;
+        }
+        P{
+            margin: 20px 0; 
+        }
+        button:hover{
+            background-color: #FFF;
+            color: dodgerblue;
+            box-shadow: 0 0 10px dodgerblue;
+        }
+        .register{
+            background-color: rgb(0, 213, 7);
+            border: 1px solid rgb(0, 213, 7);
+            box-shadow: 0 0 6px rgb(0, 213, 7);
+        }
+        .register:hover{
+            color: rgb(0, 213, 7);
+            background-color: #FFF;
+            box-shadow: 0 0 10px rgb(0, 213, 7);
+        }
+        .google{
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            justify-content: center;
+            border: 1px solid gray;
+            width: 230px;
+            padding: 5px;
+            border-radius: 6px;
+            transition: .3s;
+            img{
+                width: 50px;
+                height: 50px;
+            
+            }
+        }
+        .df{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 50px auto;
+        }
+        .google:hover{
+            box-shadow: 0 0 4px #5c5c5c;
+        }
+    }
+}
