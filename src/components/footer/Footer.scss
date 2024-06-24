@@ -1,0 +1,17 @@
+footer{
+    background-color: #232536;
+    padding: 50px 0;
+   
+}
+footer  *{
+    color: #FFFF;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    .icons{
+        display: flex;
+        gap: 26px;
+    }
+}

@@ -69,3 +69,36 @@
         }
     }
 }
+
+
+
+.form{
+    width: 400px !important;
+    height: 300px !important;
+    background-color:transparent !important;
+    display: flex;
+    flex-direction: column;
+    span{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 0 auto;
+        margin-top: 30px;
+        label{
+            display: flex;
+        }
+        input{
+            width: 350px;
+            padding: 15px;
+            border-radius: 6px;
+            border: none;
+            outline: none;
+            background-color: #ffffff;
+        }
+    }
+    button{
+        width: 350px !important;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+}

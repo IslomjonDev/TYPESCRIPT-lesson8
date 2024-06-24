@@ -1,0 +1,73 @@
+.create__product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    form{
+        width: 900px;
+        margin: 50px 0;
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #bababa;
+        box-shadow: 4px 8px 16px #bababa;
+        padding: 50px;
+        border-radius: 16px;
+        input{
+            width: 380px;
+            padding: 15px;
+            outline: none;
+            border-radius: 6px;
+            border: 1px solid #bababa;
+            box-shadow: 4px 2px 6px #bababa;
+        }
+        textarea{
+            border: 1px solid #bababa;
+            box-shadow: 4px 2px 6px #bababa;
+            border-radius: 6px;
+            padding: 20px;
+            outline: none;
+            resize: none;
+        }
+        button{
+            padding: 15px;
+            border: 1px solid #bababa;
+            box-shadow: 4px 2px 6px #bababa;
+            border-radius: 6px;
+        }
+        button:hover{
+            opacity: 75%;
+        }
+        .df{
+            width: 100%;
+            gap: 20px;
+            display: flex;
+
+        }
+        .files{
+            background-color: #fff;
+            border-radius: 6px;
+            cursor: pointer !important;
+            display: flex;
+            gap: 10px;
+            padding:5px;
+            img{
+                object-fit: contain;
+                width: 50px;
+                height: 50px;
+            }
+            span{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                padding: 15px;
+                width: 143px;
+                cursor: pointer;
+            }
+            input{
+                opacity: 0;
+                cursor: pointer;
+                width: 20px;
+            }
+        }
+    }
+}

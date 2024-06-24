@@ -10,20 +10,20 @@ export const productApi = api.injectEndpoints({
         }),
         providesTags:["Product"]
       }),
-      // Post request
-      SignIn: build.mutation({
+      // User Post request
+      postSignIn: build.mutation({
         query: (body)=> ({
           url: "/auth/sign-in",
           method: "POST",
           body
         }),
-        invalidatesTags: ["Product"]
+        invalidatesTags: ["User"]
       }),
-      // Patch request
-      updateProduct: build.mutation({
-        query: ({_id, body})=> ({
-          url: `/`,
-          method: "PATCH",
+      // Product Post request
+      createProduct: build.mutation({
+        query: ({body})=> ({
+          url: `/products/create`,
+          method: "POST",
           body
         }),
         invalidatesTags: ["Product"]
@@ -35,13 +35,20 @@ export const productApi = api.injectEndpoints({
           method: "DELETE"
         }),
         invalidatesTags: ["Product"]
-      })
+      }),
+      // Single Get request
+      getDetailProduct: build.query({
+        query: (id) => ({
+          url: `/products/${id}`,
+        }),
+      }),
     }),
   })
   
   export const {
     useGetProductsQuery,
     useDeleteProductMutation,
-    usePostSignIn,
-    useUpdateProductMutation
+    usePostSignInMutation, 
+    useCreateProductMutation , 
+    useGetDetailProductQuery,
   } = productApi
